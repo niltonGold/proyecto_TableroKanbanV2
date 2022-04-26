@@ -1,0 +1,194 @@
+
+/* sentencias que ayudara a que el formulario a parezca o desaparesca segun se necesite */
+.task__form{
+    width: 90%;
+}
+
+.task__form--hidden{
+    display: none;
+}
+
+    .columns{
+        background-color: #f6f8fa;
+        width: 30%;
+
+        
+    }
+        .column_head{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* background-color:bisque */
+        }
+                        
+
+            .column_container-lengh-nameOfColumn{
+                display: flex;
+                flex-direction: row;
+                /* background-color: aquamarine; */
+                gap: 1rem;
+                padding-left: 1rem;
+                font-weight: bold;
+            }
+
+            .iconADD-enable{
+                /* background-color: blue; */
+                display: flex;
+                align-self: center;
+                margin-right: 1rem;
+                cursor: pointer;
+            }
+                    .iconADD-disable{
+                        /* background-color: blue; */
+                        display: flex;
+                        align-self: center;
+                        margin-right: 1rem;
+                        opacity: 0.4;
+                        pointer-events: none;
+                    }
+
+                    .iconADD-enable:hover, .iconADD-enable:focus, .iconADD-enable:active{
+                        cursor: pointer;
+                        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.631);
+                        -webkit-transform: scale(1.1);
+                        transform: scale(1.1);
+                        border: 1px solid black;
+                    }
+
+
+
+/* Estilo del formulario */
+.formulario_textArea-cancel-add{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+        .area_text{
+            width: 80%;
+            border-radius: 5px;
+        }
+
+        @media ( min-width: 0px) and ( max-width: 400px){
+            .area_text{
+                font-size: xx-small;
+            }
+        }
+
+        @media ( min-width: 401px){
+            .area_text{
+                font-size: medium;
+            }
+        }
+
+        .area_text:hover{
+            /* color: aqua; */
+            border: rgba(41, 121, 206, 0.7) solid 2px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px 
+        }
+
+        .buttons_cancel-add{
+            /* background-color: bisque; */
+            width: 82%;
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+        }
+                .btn_cancel{
+                    width: 48%;
+                    height: 1.8rem;
+                    background-color: #fafbfc;
+                    border-color: rgba(27,31,35,0.15);
+                    border-radius: 5px;
+                }
+                        .btn_cancel:hover, .btn_cancel:focus, .btn_cancel:active{
+                            cursor: pointer;
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.631);
+                            -webkit-transform: scale(1.1);
+                            transform: scale(1.1);
+                        }
+
+
+
+                .btn_add-enable{
+                    width: 48%;
+                    height: 1.8rem;
+                    background-color: #2ea44f;
+                    border-style: none;
+                    border-radius: 5px;
+                }
+
+
+               
+                        .btn_add-enable:hover, .btn_add-enable:focus, .btn_add-enable:active{
+                            cursor: pointer;
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.631);
+                            -webkit-transform: scale(1.1);
+                            transform: scale(1.1);
+                        }
+
+                .btn_add-disable{
+                    width: 48%;
+                    height: 1.8rem;
+                    background-color: #2ea44f;
+                    opacity: 0.4;
+                    border-style: none;
+                    border-radius: 5px;
+                    pointer-events: none;
+                }
+                
+
+/* Estilo de la lista de task */
+.list_container{
+    /* background-color: rgb(51, 172, 132); */
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    padding: 1rem 0rem 1rem 0rem;
+    height: 60vh;
+    overflow: auto;   
+}
+  
+
+
+/* Boton Clear All */
+.AddIcon-btnClearAll{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+}
+        #iconADD{
+            margin-right: 0;
+        }
+
+        
+
+            @media (min-width: 0px) and (max-width: 400px){
+                .btn_ClearAll {
+                    font-size: xx-small;
+                }
+            }
+
+            @media (min-width: 401px){
+                .btn_ClearAll {
+                    font-size: medium;
+                } 
+            }
+
+        .btn_ClearAll-hidden{
+            display: none;
+        }
+
+        .btn_ClearAll:hover, .btn_ClearAll:focus, .btn_ClearAll:active{
+            cursor: pointer;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.631);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
