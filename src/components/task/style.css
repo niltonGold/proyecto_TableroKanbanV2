@@ -1,0 +1,58 @@
+
+.task{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    width: 80%;
+    background-color: #dce2e8;
+    border-color: rgba(27,31,35,0.15);
+    border-radius: 5px;
+    /* line-height: 20%; */
+    padding: 0.3rem 0rem 0.3rem 0rem;
+
+
+}
+
+    .status-container{
+        /* background-color: aqua; */
+        /* padding-top: 0.1rem; */
+        display: flex;
+        flex-direction: row;
+    }
+            .icon-status-container{
+                /* background-color: bisque; */
+                padding-top: 0.15rem;
+            }
+
+                .text-date-container{
+                    /* background-color: bisque; */
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.1rem;
+                }
+                        .text{
+                            color: blue;
+                            font-weight: bold;
+                            word-break: break-all;/* evita que el texto se salga del la caja que lo contiene */
+                        } 
+                        .date{
+                            /* font-size: xx-small; */
+                        }
+
+    .borrar-container{
+        /* background-color: blueviolet; */
+        padding-top: 0.15rem;
+        display: flex;
+        align-items: center;
+        height: 1.5rem;
+        
+    }
+            .borrar-container:hover, .borrar-container:focus, .borrar-container:active{
+                cursor: pointer;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.631);
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+                border: solid black 0.1px;
+            }
+

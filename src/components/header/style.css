@@ -1,0 +1,31 @@
+.header{
+    width: 100%;
+    background-color: #24292e;
+    display: flex;
+    flex-direction: row;
+}
+
+    .neoland_logo{
+        content: url("../../imges/NeolandLogo.jpg");
+        width: 3rem;
+        height: 3rem;
+        padding: 1rem;
+        padding-left: 1.6rem;
+    }
+
+    .version_container{
+        /* background-color: aliceblue; */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:0.5rem;
+    }
+            .iconChart{
+                background-color: white;
+            }
+
+            .paragragh_version{
+                color: white;
+            }
